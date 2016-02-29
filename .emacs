@@ -40,3 +40,16 @@
 (setq compilation-read-command nil)
 ;;show matching parentheses
 (show-paren-mode 1)
+
+;; MELPA
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (add-to-list
+   'package-archives
+   '("melpa" . "http://melpa.org/packages/")
+   t)
+  (package-initialize))
+
+;; backup to central dir
+(setq backup-directory-alist `(("." . "~/.saves")))
+(setq backup-by-copying t)
