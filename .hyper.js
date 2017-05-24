@@ -81,12 +81,11 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [
-    'hyberborder',
-    "hyperborder",
-    "hyper-pane",
-    "hyper-tabs-enhanced",
-    "hyperterm-tomorrow-night"
+    plugins: [
+    'hyperborder',
+    'hyper-pane',
+    'hyper-tabs-enhanced',
+    'hyperterm-tomorrow-night'
   ],
 
   // in development, you can create a directory under
