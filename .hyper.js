@@ -83,13 +83,19 @@ module.exports = {
   //   `project#1.0.1`
     plugins: [
     'hyperborder',
-    'hyper-pane',
-    'hyper-tabs-enhanced',
-    'hyperterm-tomorrow-night'
+	'hyper-pane',
+	'hyperterm-tab-icons',
+	'hyper-snazzy',
+//    'hyper-tabs-enhanced',
+//    'hyperterm-tomorrow-night'
   ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
-  localPlugins: []
+    localPlugins: [],
+
+    modifierKeys: {
+	altIsMeta: true
+    } 
 };
